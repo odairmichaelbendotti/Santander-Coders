@@ -9,12 +9,12 @@ body{
     align-items: center;
     justify-content: center;
     height: 100vh;
+    background-color: black;
 }
 
 .container{
     width: 1270px;
     height: 776px;
-    background-color: antiquewhite;
     display: flex;
 }
 
@@ -29,5 +29,5 @@ body{
     height: 100%;
     width: 686px;
     background-position: center;
-    background-size: ;
+    background-size: contain;
 }
