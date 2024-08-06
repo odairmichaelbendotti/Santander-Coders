@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.container{
+    width: 1270px;
+    height: 776px;
+    background-color: antiquewhite;
+    display: flex;
+}
+
+.side-1{
+    width: 581px;
+    height: 100%;
+    background-image: url('assets/img/image\ 1.png');
+}
+
+.img-2{
+    background-image: url('assets//img/image\ 2.png');
+    height: 100%;
+    width: 686px;
+    background-position: center;
+    background-size: ;
+}
