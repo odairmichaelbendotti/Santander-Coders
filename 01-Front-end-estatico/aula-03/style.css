@@ -9,7 +9,7 @@ body{
     align-items: center;
     justify-content: center;
     height: 100vh;
-    background-color: black;
+    background: #101010;
 }
 
 .container{
@@ -18,10 +18,67 @@ body{
     display: flex;
 }
 
+.container img{
+    width: 150px;
+}
+
 .side-1{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     width: 581px;
-    height: 100%;
-    background-image: url('assets/img/image\ 1.png');
+    height: 70%;
+    color: white;
+    padding: 30px;
+}
+
+.side-1 h1{
+    text-transform: uppercase;
+    color: #e50914;
+    font-size: 80px;
+}
+
+.play-button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 150px;
+    background-color: #e50914;
+    font-size: 20px;
+    text-transform: uppercase;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.play-button:hover{
+    background-color: white;
+    color: #e50914;
+    font-weight: bold;
+}
+
+.mylist-button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 150px;
+    border: 3px solid #FFF;
+    font-size: 20px;
+    text-transform: uppercase;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.mylist-button:hover{
+    color: #e50914;
+    border: 3px solid #e50914;
+}
+
+.buttons{
+    display: flex;
+    gap: 30px;
+    margin-left: 50px;
 }
 
 .img-2{
@@ -30,4 +87,10 @@ body{
     width: 686px;
     background-position: center;
     background-size: contain;
+}
+
+.burrice-que-fiz{
+    display: flex;
+    align-items: center;
+    height: 100%;
 }
