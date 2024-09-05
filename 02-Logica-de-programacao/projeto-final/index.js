@@ -7,9 +7,6 @@ let listaToDo = [
     { posicao: 1, atividade: 'Comprar carne' }
 ]
 let acao
-let editar
-let atividadeAlterada
-let remover
 
 console.log(`
     Digite "add" para adicionar uma nova atividade;
