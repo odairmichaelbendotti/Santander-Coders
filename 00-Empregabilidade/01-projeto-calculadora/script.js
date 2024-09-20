@@ -41,3 +41,39 @@ function calcular() {
     }
   }
 }
+
+// Funções para executar testes e mostrá-los no console.
+
+function executarTestes() {
+  // Teste 1: Verificar se os operadores não são duplicados
+  limparVisor();
+  adicionarValor('5');
+  adicionarOperacao('+');
+  adicionarOperacao('*'); // Espera-se que substitua o '+'
+  console.assert(visor.value === '5 * ', 'Teste 1 falhou: operadores duplicados não foram evitados');
+
+  // Teste 2: Verificar múltiplos zeros à esquerda
+  limparVisor();
+  adicionarValor('0');
+  adicionarValor('0'); // Espera-se que não adicione outro zero
+  adicionarValor('1');
+  console.assert(visor.value === '01', 'Teste 2 falhou: múltiplos zeros à esquerda foram permitidos');
+
+  // Teste 3: Verificar cálculo correto
+  limparVisor();
+  adicionarValor('2');
+  adicionarOperacao('+');
+  adicionarValor('3');
+  calcular();
+  console.assert(visor.value === '5', 'Teste 3 falhou: o cálculo foi incorreto');
+
+  // Teste 4: Verificar se o visor vazio exibe "Erro" ao tentar calcular
+  limparVisor();
+  calcular();
+  console.assert(visor.value === 'Erro', 'Teste 4 falhou: cálculo em visor vazio não exibiu erro');
+  
+  console.log('Todos os testes foram concluídos.');
+}
+
+// Executar os testes
+executarTestes();
