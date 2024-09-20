@@ -20,6 +20,11 @@ function printInstructions() {
         `);
 }
 
+// \x1b: Esse é o código de escape ANSI. Ele sinaliza para o terminal que a sequência de formatação está começando.
+//[31m: Esse é o código para a cor vermelha. Os números entre [ e m indicam o tipo de formatação que será aplicada. O 31 corresponde à cor vermelha do texto.
+//%s: Esse é o marcador que será substituído pelo valor da variável message ao ser impresso.
+//\x1b[0m: Esse é o código que "reseta" a formatação, retornando o estilo de impressão à configuração padrão do terminal.
+
 function printError(message) {
   // Deixa a mensagem de erro em vermelho
   console.error("\x1b[31m%s\x1b[0m", message);
