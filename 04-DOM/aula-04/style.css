@@ -1,0 +1,31 @@
+:root {
+    --linear-bg: linear-gradient(65deg, rgba(86,33,33,1) 24%, rgba(134,38,32,1) 65%);
+    --primary: #f6ad55;
+    --secondary: #FFFFFF;
+}
+
+.bg-body{
+    background-color: var(--linear-bg);
+}
+
+.color-primary{
+    color: var(--primary);
+}
+
+.bg-primary{
+    background-color: var(--primary)
+}
+
+.color-secondary{
+    color: var(--secondary);
+}
+
+.bg-secondary{
+    background-color: var(--secondary);
+}
+
+body{
+    background: var(--linear-bg)
+}
+
+
