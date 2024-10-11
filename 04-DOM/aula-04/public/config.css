@@ -41,3 +41,25 @@ i {
   color: white;
   font-weight: bold;
 }
+
+#containerAtividades, #removidos, #concluidas{
+  margin-bottom: 12px;
+}
+
+.fa-square-check{
+  font-size: 20px;
+  color: green;
+}
+
+.fa-square-xmark{
+  font-size: 20px;
+  color: rgb(235, 95, 95);
+}
+
+.hidden{
+  display: none!important;
+}
+
+.visible{
+  display: block;
+}
